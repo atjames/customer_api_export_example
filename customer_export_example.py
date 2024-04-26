@@ -32,7 +32,7 @@ def filter_and_write_csv(input_csv, output_csv):
 url = "https://api2.frontapp.com/analytics/exports"
 
 # Convert start and end dates to Unix timestamps
-# Change these dates to what you require and feel free to use the actual Unix timestampes in the request rather than a conversation as I did here
+# Change these dates to what you require and feel free to use the actual Unix timestampes in the request rather than a conversion as I did here
 start_date = datetime.strptime("2023-01-01T00:00:00+00", "%Y-%m-%dT%H:%M:%S+00").timestamp() 
 end_date = datetime.strptime("2024-01-01T00:00:00+00", "%Y-%m-%dT%H:%M:%S+00").timestamp()
 
