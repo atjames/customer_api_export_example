@@ -61,7 +61,7 @@ if response.status_code != 201:
 export_id = response.json().get("_links").get("self").split("/")[-1]
 
 # Loops and issues a GET request until progress is at 100%. Might need to add additional checks to ensure the export hasn't timed out. 
-# I would suggest only looping a total of 20-30 times (rather than endlessly) to avoid a never-ending request loop. But to save time,  this example will do to show as an example.
+# I would suggest only looping a total of 20-30 times (rather than endlessly) to avoid a never-ending request loop. But this will do to show as an example.
 while True:
     print("Issuing GET request for Export...")
     get_response = requests.get(f"{url}/{export_id}", headers=headers)
